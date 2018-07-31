@@ -4,7 +4,7 @@ var btn = document.getElementById('btn');
 
 btn.addEventListener('click', function (){
     var ourRequest = new XMLHttpRequest;
-    ourRequest.open("GET", "https://learnwebcode.github.io/json-example/animals-"+ urlCount +".json");
+    ourRequest.open("GET", "res/animal-"+ urlCount +".json");
     ourRequest.onload = function() {
         var ourData = JSON.parse(ourRequest.responseText);
         disHtml(ourData);
